@@ -1,4 +1,4 @@
-# SecureText Encrypter
+# SecureText
 
 A modern React-based text encryption application supporting multiple encryption algorithms including AES, DES, and RSA.
 
