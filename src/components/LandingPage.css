@@ -34,6 +34,36 @@
   z-index: 1;
 }
 
+.learn-button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.learn-button {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 12px rgba(31, 41, 55, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learn-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.4);
+  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+}
+
 .hero-section {
   padding: 60px 0;
 }
@@ -139,20 +169,44 @@
   margin: 0 4px;
 }
 
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 .cta-button {
-  background: linear-gradient(135deg, #0a0a0a 0%, #2a2a2a 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #2d2d2d 100%);
   color: white;
   border: none;
-  padding: 20px 40px;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 16px;
+  padding: 18px 48px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(10, 10, 10, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-cta-button {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 24px rgba(31, 41, 55, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -190,6 +244,12 @@
   box-shadow: 0 12px 32px rgba(0,0,0,0.25);
 }
 
+.learn-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(31, 41, 55, 0.4);
+  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+}
+
 .cta-button:active {
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
@@ -221,6 +281,16 @@
   .cta-button {
     padding: 18px 36px;
     font-size: 0.9rem;
+  }
+  
+  .learn-button-container {
+    top: 16px;
+    right: 16px;
+  }
+  
+  .learn-button {
+    padding: 10px 16px;
+    font-size: 0.8rem;
   }
 }
 

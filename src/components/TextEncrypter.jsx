@@ -3,7 +3,7 @@ import CryptoJS from 'crypto-js';
 import JSEncrypt from 'jsencrypt';
 import './TextEncrypter.css';
 
-const TextEncrypter = ({ onBackToHome }) => {
+const TextEncrypter = ({ onBackToHome, onLearn }) => {
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [algorithm, setAlgorithm] = useState('AES');
@@ -281,6 +281,9 @@ const TextEncrypter = ({ onBackToHome }) => {
             ← Back
           </button>
           <h1 className="title">SecureText</h1>
+          <button className="learn-button" onClick={onLearn}>
+            📚 Learn
+          </button>
         </header>
 
         <div className="main-content">

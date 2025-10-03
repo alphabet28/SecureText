@@ -95,6 +95,29 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+.learn-button {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 8px rgba(31, 41, 55, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learn-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(31, 41, 55, 0.4);
+  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+}
+
 .theme-toggle {
   background: rgba(255,255,255,0.8);
   border: 1px solid #e5e5e5;
