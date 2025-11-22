@@ -3,10 +3,10 @@ import CryptoJS from 'crypto-js';
 import JSEncrypt from 'jsencrypt';
 import './TextEncrypter.css';
 
-const TextEncrypter = ({ onBackToHome, onLearn }) => {
+const TextEncrypter = ({ onBackToHome, onLearn, initialAlgorithm = 'AES' }) => {
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
-  const [algorithm, setAlgorithm] = useState('AES');
+  const [algorithm, setAlgorithm] = useState(initialAlgorithm);
   const [key, setKey] = useState('');
   const [operation, setOperation] = useState('encrypt');
   const [rsaKeyPair, setRsaKeyPair] = useState(null);
